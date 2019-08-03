@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require 'pry'
+require 'dotenv'
+
+Dotenv.load
+
+account_sid = ENV['ACCOUNT_SID'] || raise('U gotta set the ACCOUNT_SID in a .env file')
+auth_token = ENV['AUTH_TOKEN'] || raise('U gotta set the AUTH_TOKEN in a .env file')
+
+binding.pry
